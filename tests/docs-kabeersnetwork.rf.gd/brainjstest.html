@@ -1,0 +1,12 @@
+<script src="https://cdn.jsdelivr.net/npm/brain.js@2.0.0-beta.1/dist/brain-browser.min.js"></script>
+<script>
+const net = new brain.recurrent.LSTM();
+
+net.train([
+  { input: 'I feel great about the world!', output: 'happy' },
+  { input: 'The world is a terrible place!', output: 'sad' },
+]);
+
+const output = net.run('I feel great about the world!'); // 'happy'
+console.log(output);
+</script>

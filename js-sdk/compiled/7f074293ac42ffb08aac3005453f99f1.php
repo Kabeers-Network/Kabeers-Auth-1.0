@@ -1,0 +1,1 @@
+<?php include ".././sdk/kauthsdk.php";include "../kauthjs.php";$id="4568129";$auth = new KAuth();$auth->init("http://kabeersnetwork.dx.am/includes/login-signup-server", "4568129", $m);$auth->go();?>
